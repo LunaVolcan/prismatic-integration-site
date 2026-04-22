@@ -7,6 +7,8 @@
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+  <meta name="description" content="Queer- and trans-led therapeutic massage, breathwork, and hypnotherapy in Albuquerque, NM. Trauma-informed, sliding-scale, with free sessions for trans and BIPOC clients.">
+  <link rel="canonical" href="https://prismaticintegration.com/">
   <meta property="og:title" content="Prismatic Integration — Trauma-Informed Somatic Care">
   <meta property="og:description" content="Queer- and trans-led therapeutic massage, breathwork, and hypnotherapy in Albuquerque, NM. Sliding-scale and free sessions available for trans and BIPOC clients.">
   <meta property="og:url" content="https://prismaticintegration.com/">
@@ -14,6 +16,44 @@
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://prismaticintegration.com/images/thumbnail.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Prismatic Integration",
+    "description": "Queer- and trans-led therapeutic massage, breathwork, and hypnotherapy in Albuquerque, NM. Trauma-informed somatic care with sliding-scale and free sessions for trans and BIPOC clients.",
+    "url": "https://prismaticintegration.com/",
+    "email": "prismaticintegration@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Albuquerque",
+      "addressRegion": "NM",
+      "addressCountry": "US"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Albuquerque"
+    },
+    "founder": [
+      { "@type": "Person", "name": "Luna", "jobTitle": "Founder, Massage & Breathwork Practitioner" },
+      { "@type": "Person", "name": "Lex", "jobTitle": "Co-Founder, Hypnotherapist" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Therapeutic Massage", "description": "Customized integrative bodywork drawing from Swedish massage, deep tissue, Thai table massage, myofascial release, craniosacral work, polarity therapy, and energy-based modalities." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Breathwork", "description": "Trauma-aware, choice-based breathwork offered one-on-one and in small group settings, focused on nervous system regulation and embodiment." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hypnotherapy", "description": "Ethical, client-centered hypnotherapy supporting healing, habit change, and self-trust. Free and low-cost options available for trans and BIPOC clients." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Online Sessions", "description": "Distance sessions for breathwork and energy-based work." } }
+      ]
+    },
+    "priceRange": "Sliding scale",
+    "sameAs": [
+      "https://cal.com/prismaticintegration"
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
@@ -702,7 +742,7 @@
     <div class="practitioners">
       <div class="prac-card fi d1">
         <div class="prac-photo">
-          <img src="images/luna.jpg" alt="Luna">
+          <img src="images/luna.jpg" alt="Luna, founder of Prismatic Integration — massage and breathwork practitioner in Albuquerque, NM">
           <div class="prac-photo-placeholder">
             <div class="ph-initial">L</div>
             <span>Add photo</span>
@@ -716,7 +756,7 @@
 
       <div class="prac-card fi d2">
         <div class="prac-photo">
-          <img src="images/lex.jpg" alt="Lex">
+          <img src="images/lex.jpg" alt="Lex, co-founder of Prismatic Integration — hypnotherapist in Albuquerque, NM">
           <div class="prac-photo-placeholder">
             <div class="ph-initial">L</div>
             <span>Add photo</span>
@@ -760,7 +800,7 @@
       There's no pressure, just an open door.
     </p>
 
-    <form class="c-form fi d3" id="contact-form" novalidate>
+    <form class="c-form fi d3" id="contact-form" name="contact" netlify novalidate>
       <div class="c-row">
         <div class="c-group">
           <label for="name">Name</label>
