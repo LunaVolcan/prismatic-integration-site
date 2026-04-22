@@ -801,6 +801,7 @@
     </p>
 
     <form class="c-form fi d3" id="contact-form" name="contact" netlify novalidate>
+      <input type="hidden" name="form-name" value="contact">
       <div class="c-row">
         <div class="c-group">
           <label for="name">Name</label>
@@ -860,10 +861,22 @@
   document.getElementById('contact-form').addEventListener('submit', e => {
     e.preventDefault();
     const btn = document.getElementById('send-btn');
-    btn.textContent = 'Sent';
     btn.disabled = true;
-    document.getElementById('form-success').style.display = 'block';
-    e.target.reset();
+    const form = e.target;
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    })
+    .then(() => {
+      btn.textContent = 'Sent';
+      document.getElementById('form-success').style.display = 'block';
+      form.reset();
+    })
+    .catch(() => {
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+    });
   });
 </script>
 </body>
